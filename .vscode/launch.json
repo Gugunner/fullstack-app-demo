@@ -1,0 +1,98 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        //Use this configuration to launch Fake repositories declared in project
+        {
+            "name": "App integration tests",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-entrypoint-args",
+                "--FIRDebugEnabled",
+                "--flavor",
+                "dev",
+                "-t",
+                //Modify this file path to run the test desired instead of all
+                "integration_test/main.dart",
+            ]
+        },
+        //Use this configuration to launch Fake repositories declared in project
+        {
+            "name": "App fake",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-entrypoint-args",
+                "--FIRDebugEnabled",
+                "--flavor",
+                "dev",
+                "-t",
+                "lib/main_fake.dart",
+            ]
+        },
+        //Use this configuration for both Firebase local Emulator Suite and Firebase piix-dev-env
+        {
+            "name": "App emulator env",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-entrypoint-args",
+                "--FIRDebugEnabled",
+                "--flavor",
+                "dev",
+                "-t",
+                "lib/main.dart",
+                "--dart-define=ENV=local"
+            ]
+        },
+        //Use this configuration for both Firebase local Emulator Suite and Firebase piix-dev-env
+        {
+            "name": "App dev env",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-entrypoint-args",
+                "--FIRDebugEnabled",
+                "--flavor",
+                "dev",
+                "-t",
+                "lib/main.dart",
+                "--dart-define=ENV=dev"
+            ]
+        },
+        //Use this configuration for Firebase piix-stage-env
+        //Use this configuration for building internal tests either in AppStore Testflight or PlayStore Closed tests
+        //Use real device
+        {
+            "name": "App stage env",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-entrypoint-args",
+                "--FIRDebugEnabled",
+                "--flavor",
+                "stage",
+                "-t",
+                "lib/main.dart",
+                "--dart-define=ENV=stage"
+            ]
+        },
+        //Use this configuration for Firebase piix-prod-env
+        //Use this configuration for building the production release of the app
+        //Use real device
+        {
+            "name": "App prod env",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-entrypoint-args",
+                "--FIRDebugEnabled",
+                "--flavor",
+                "prod",
+                "-t",
+                "lib/main.dart",
+                "--dart-define=ENV=prod"
+            ]
+        },
+    ]
+}

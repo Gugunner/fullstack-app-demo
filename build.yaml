@@ -1,0 +1,36 @@
+targets:
+  $default:
+    builders:
+      envied_generator|envied:
+        options:
+          path: .env.custom
+          override: true
+      riverpod_generator:
+        options:
+          provider_familiy_name_prefix: "Pod"
+        generate_for:
+          - "**bootstrap.dart"
+          - "**/domain/**model.dart"
+          - "**/application/**service.dart"
+          - "**/presentation/**controller.dart"
+          - "**/data/**repository.dart"
+          - "**/network/**.dart"
+      json_serializable|json_serializable:
+        options:
+          explicit_to_json: true
+        # This will only generate code for files
+        # in specified folders.
+        generate_for:
+          - "**/domain/**model.dart"
+      #TODO: Uncomment when adding freezed if not delete
+      # freezed|freezed:
+      #   options:
+      #     unionKey: 'modelType'
+      #     copyWith: true
+      #     fromJson: true
+      #     toJson: true
+      #     makeCollectionsUnmodifiable: false
+      #   # This will only generate code for files
+      #   # in specified folders.
+      #   generate_for:
+      #     - "**/domain/**model.dart"

@@ -1,0 +1,257 @@
+{
+    "@@locale": "en",
+    "@@context": "MyApp:en",
+    "@@author": "Raul Alonzo",
+    "@@last_modified": "2024-04-23T14:40:49+0000",
+    "@@x-version": "1.0.0",
+    "@@x-FEATURE: COMMON": "COMMON",
+    "appTitle": "Piix",
+    "@appTitle": {
+        "type": "text",
+        "context": "Common:App:Title",
+        "description": "The title of the app used to identify it."
+    },
+    "copyright": "Copyright © {year} Piix",
+    "@copyright": {
+        "type": "text",
+        "context": "Common:Legal",
+        "description": "The copyright message",
+        "placeholders": {
+            "year": {
+                "type": "num",
+                "example": "2024"
+            }
+        }
+    },
+    "termsOfService": "Terms of Service",
+    "@termsOfService": {
+        "type": "text",
+        "context": "Common:Legal:Agreements",
+        "description": "The term for our app service agreement"
+    },
+    "privacyPolicy": "Privacy Policy",
+    "@privacyPolicy": {
+        "type": "text",
+        "context": "Common:Legal:Agreements",
+        "description": "The "
+    },
+    "readAndAcceptTermsAndPrivacy": "I have read and accept the Terms of Service and Privacy Policy.",
+    "@readAndAcceptTermsAndPrivacy": {
+        "type": "text",
+        "context": "Common:TermsAndPrivacyCheck",
+        "description": "An acknowledgement that the user must do before creating or updating usage in the app."
+    },
+    "enterYourEmail": "Enter your email",
+    "@enterYourEmail": {
+        "type": "text",
+        "context": "Common:Inputs",
+        "description": "A command that instructs the user to enter the email in the input that uses it."
+    },
+    "signOut": "Sign out",
+    "@signOut": {
+        "type": "text",
+        "context": "Common:Profile",
+        "description": "The action to end the current user session."
+    },
+    "@@x-FEATURE: COMMON ERRORS": "COMMON ERRORS",
+    "unknownError": "We are sorry an unknown error has occured.",
+    "@unknownError": {
+        "type": "text",
+        "context": "Common:Errors",
+        "description": "A general message when the error cannot be translated."
+    },
+    "seemsYouAreLost": "Seems you are lost",
+    "@seemsYouAreLost": {
+        "type": "text",
+        "context": "Common:Route:LostPage",
+        "description": "The title when a user reaches a not found page"
+    },
+    "@@x-FEATURE: AUTHENTICATION": "AUTHENTICATION",
+    "welcomeToPiix": "Welcome to Piix",
+    "@welcomeToPiix": {
+        "type": "text",
+        "context": "Authentication:Web:WelcomeToPiixOneTimeCodeSubmit",
+        "description": "A greeting message for the user."
+    },
+    "createAnAccountWithUs": "Create an account with us",
+    "@createAnAccountWithUs": {
+        "type": "text",
+        "context": "Authentication:Web:WelcomeToPiixOneTimeCodeSubmit",
+        "description": "A invitation to create an account with the app."
+    },
+    "manageYourMembershipAndInviteOthers": "Manage your assistances and invite other to join your family protection.",
+    "@manageYourMembershipAndInviteOthers": {
+        "type": "text",
+        "context": "Authentication:Web:WelcomeToPiixOneTimeCodeSubmit",
+        "description": "An explanation of what Piix can do."
+    },
+    "verifyYourEmailAndCreateAccount": "Verify your email to create an account.",
+    "@verifyYourEmailAndCreateAccount": {
+        "type": "text",
+        "context": "Authentication:Web:WelcomeToPiixOneTimeCodeSubmit",
+        "description": "An instruction on how to create the account."
+    },
+    "loginWithAOneTimeCodeWithEmail": "Login with a one time code using your email.",
+    "@loginWithAOneTimeCodeWithEmail": {
+        "type": "text",
+        "context": "Authentication:Web:WelcomeToPiixOneTimeCodeSubmit",
+        "description": "An instruction on how to login with the email."
+    },
+    "enterYourEmailForVerfication": "Enter your email for verification.",
+    "@enterYourEmailForVerfication": {
+        "type": "text",
+        "context": "Authentication:Web:WelcomeToPiixOneTimeCodeSubmit",
+        "description": "An instruction on how to start email verification."
+    },
+    "sendCode": "Send code",
+    "@sendCode": {
+        "type": "text",
+        "context": "Authentication:Web:SubmitEmailInputForVerificationCodeForm",
+        "description": "The action of the button that initializes a request to send a verification code whe a login occurs."
+    },
+    "verifyEmail": "Verify email",
+    "@verifyEmail": {
+        "type": "text",
+        "context": "Authentication:Web:SubmitEmailInputForVerificationCodeForm",
+        "description": "The action of the button that initializes a request to send a verification code when creating an account."
+    },
+    "dontHaveAnAccount": "Don''t have an account?",
+    "@dontHaveAnAccount": {
+        "type": "text",
+        "context": "Authentication:Web:OrSignInSigUpLabel",
+        "description": "A question to create in the user awareness when the user has no account."
+    },
+    "alreadyHaveAnAccount": "Already have an account?",
+    "@alreadyHaveAnAccount": {
+        "type": "text",
+        "context": "Authentication:Web:OrSignInSigUpLabel",
+        "description": "A question to make the user remember if there is already an account created."
+    },
+    "signUp": "Sign up",
+    "@signUp": {
+        "type": "text",
+        "context": "Authentication:Web:OrSignInSigUpLabel",
+        "description": "Used in actions to make the user create an account."
+    },
+    "signIn": "Sign in",
+    "@signIn": {
+        "type": "text",
+        "context": "Authentication:Web:OrSignInSigUpLabel",
+        "description": "Used in actions to make the user login."
+    },
+    "login": "Login",
+    "@login": {
+        "type": "text",
+        "context": "Authentication:MobileTablet:PortraitOrientationSignInSignUp",
+        "description": "Used to indicate to the user that the current flow is a login flow."
+    },
+    "createAccount": "Create account",
+    "@createAccount": {
+        "type": "text",
+        "context": "Authentication:MobileTablet:PortraitOrientationSignInSignUp",
+        "description": "Used to indicate to the user that the current flow is a register flow."
+    },
+    "enterTheEmailYouUsed": "Enter the email you used when creating the account to receive a verification code.",
+    "@enterTheEmailYouUsed": {
+        "type": "text",
+        "context": "Authentication:MobileTablet:PortraitOrientationSignInSignUp",
+        "description": "Used to explain to the user how to login."
+    },
+    "verifyYourEmailByEntering": "Verify your email by entering a code to create an account.",
+    "@verifyYourEmailByEntering": {
+        "type": "text",
+        "context": "Authentication:MobileTablet:PortraitOrientationSignInSignUp",
+        "description": "Used to explain to the user how to register."
+    },
+    "protectTheOnesYouLove": "Protect the ones you love",
+    "@protectTheOnesYouLove": {
+        "type": "text",
+        "context": "Authentication:MobileTablet:WelcomeActions",
+        "description": "A sales promise to show the user what the app can do. "
+    },
+    "enterTheVerificationCode": "Enter the verification code",
+    "@enterTheVerificationCode": {
+        "type": "text",
+        "context": "Authentication:Web:OneColumnEmailVerificationCodePage",
+        "description": "Invites the user to do the action of entering a verification code."
+    },
+    "enterTheCodeSentTo": "Enter the code sent to {email}",
+    "@enterTheCodeSentTo": {
+        "type": "text",
+        "context": "Authentication:Web:OneColumnEmailVerificationCodePage",
+        "description": "Shows where the verification code was sent to.",
+        "placeholders": {
+            "email": {
+                "type": "String",
+                "example": "email@gmail.com"
+            }
+        }
+    },
+    "verificationCode": "Verification code",
+    "@verificationCode": {
+        "type": "text",
+        "context": "Authentication:All:VerificationCodeInput",
+        "description": "The term for a code used to verify a login."
+    },
+    "didNotReceiveACode": "Didn''t receive a code?",
+    "@didNotReceiveACode": {
+        "type": "text",
+        "context": "Authentication:All:SubmitVerificationCodeInputForm",
+        "description": "Makes the user take notice to an action if the verification code was never received."
+    },
+    "inXMinYouCan": "In {min} min. you can",
+    "@inXMinYouCan": {
+        "type": "text",
+        "context": "Authentication:All:ResendCodeTimer",
+        "description": "Shows the user in how many minutes an action is available.",
+        "placeholders": {
+            "min": {
+                "type": "String",
+                "example": "02:00"
+            }
+        }
+    },
+    "requestANewCode": "Request a new code",
+    "@requestANewCode": {
+        "type": "text",
+        "context": "Authentication:All:SubmitVerificationCodeInputForm",
+        "description": "A CTA that resend the verification code."
+    },
+    "verifyCode": "Verify code",
+    "@verifyCode": {
+        "type": "text",
+        "context": "Authentication:All:SubmitVerificationCodeInputForm",
+        "description": "A CTA that sends the code to be matched to a stored verification code."
+    },
+    "@@x-FEATURE: AUTHENTICATION ERRORS": "AUTHENTICATION ERRORS",
+    "emptyEmailField": "The email field cannot be empty.",
+    "@emptyEmailField": {
+        "type": "text",
+        "context": "Authentication:All:SubmitEmailInputForVerificationCodeForm",
+        "description": "The error displayed when an email is empty."
+    },
+    "invalidEmail": "The email is invalid.",
+    "@invalidEmail": {
+        "type": "text",
+        "context": "Authentication:All:SubmitEmailInputForVerificationCodeForm",
+        "description": "The error displayed when an email is invalid."
+    },
+    "emailAlreadyExists": "The email is already in use.",
+    "@emailAlreadyExists": {
+        "type": "text",
+        "context": "Authentication:All:SubmitEmailInputForVerificationCodeForm",
+        "description": "The error displayed when an email is already in use when creating a new account or updating the email."
+    },
+    "emailNotFound": "The email could not be found.",
+    "@emailNotFound": {
+        "type": "text",
+        "context": "Authentication:All:SubmitEmailInputForVerificationCodeForm",
+        "description": "The error displayed when an email is not found when a login occurs."
+    },
+    "incorrectVerificationCode": "The code is incorrect",
+    "@incorrectVerificationCode": {
+        "type": "text",
+        "context": "Authentication:All:SubmitVerifiactionCodeInputForm",
+        "description": "The error displayed when the verification code does not match."
+    }
+}

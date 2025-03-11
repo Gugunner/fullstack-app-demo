@@ -1,0 +1,16 @@
+# Compiled JavaScript files
+lib/**/*.js
+lib/**/*.js.map
+
+# TypeScript v1 declaration files
+typings/
+
+# Node.js dependency directory
+node_modules/
+
+#Test coverage files
+.nyc_output/
+coverage/
+
+#Emulator files
+.emulator/

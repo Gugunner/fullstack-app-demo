@@ -1,0 +1,8 @@
+{
+  "include": [
+    "src",
+    "test",
+    "./**/*.ts",
+    ".eslintrc.js"
+  ]
+}

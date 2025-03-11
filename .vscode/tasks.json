@@ -1,0 +1,82 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Flutter fvm build:watch",
+            "type": "shell",
+            "command": "fvm dart run build_runner watch --delete-conflicting-outputs"
+        },
+        {
+            "label": "Flutter fvm coverage report",
+            "type": "shell",
+            "command": "fvm flutter test --coverage && lcov --remove coverage/lcov.info '**/*.g.dart' -o coverage/clean_lcov.info && genhtml coverage/clean_lcov.info -o coverage/html"
+        },
+        {
+            "label": "Flutter fvm test all",
+            "type": "shell",
+            "command": "fvm flutter test"
+        },
+        {
+            "label": "Flutter fvm test goldens web",
+            "type": "shell",
+            "command": "fvm flutter test --tags=golden,layout,web"
+        },
+        {
+            "label": "Flutter fvm test goldens tablet",
+            "type": "shell",
+            "command": "fvm flutter test --tags=golden,layout,tablet,ios"
+        },
+        {
+            "label": "Flutter fvm test goldens mobile",
+            "type": "shell",
+            "command": "fvm flutter test --tags=golden,layout,mobile,android"
+        },
+        {
+            "label": "Flutter fvm update goldens web",
+            "type": "shell",
+            "command": "fvm flutter test --update-goldens --tags=golden,layout,web"
+        },
+        {
+            "label": "Flutter fvm update goldens tablet",
+            "type": "shell",
+            "command": "fvm flutter test --update-goldens --tags=golden,layout,tablet,ios"
+        },
+        {
+            "label": "Flutter fvm update goldens mobile",
+            "type": "shell",
+            "command": "fvm flutter test --update-goldens --tags=golden,layout,mobile,android"
+        },
+        {
+            "label": "Flutter fvm generate localization files",
+            "type": "shell",
+            "command": "fvm flutter gen-l10n"
+        },
+        {
+            "label": "Functions tsc build:watch",
+            "type": "shell",
+            "command": "cd functions && npm run build:watch"
+        },
+        {
+            "label": "Functions jest test:watch",
+            "type": "shell",
+            "command": "cd functions && npm run test:watch",
+        },
+        {
+            "label": "Functions jest coverage:report",
+            "type": "shell",
+            "command": "cd functions && npm run coverage",
+        },
+        {
+            "label": "Firebase import and export emulator",
+            "type": "shell",
+            "command": "cd functions && firebase emulators:start --import=../seed_export --export-on-exit=../seed_export"
+        },
+        {
+            "label": "Firebase import emulator",
+            "type": "shell",
+            "command": "cd functions && firebase emulators:start --import=../seed_import"
+        }
+    ]
+}

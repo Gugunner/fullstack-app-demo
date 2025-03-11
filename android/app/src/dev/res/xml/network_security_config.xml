@@ -1,0 +1,6 @@
+<!-- A security configuration to allo Android emulator to connect with Firebase emulator endpoints -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

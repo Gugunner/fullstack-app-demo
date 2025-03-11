@@ -1,0 +1,50 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function notRevoked() {
+			//Either there is no revokeTime
+			return resource.data.revokeTime == null 
+			//or the new authTime is later than the revokeTime
+			|| request.auth.token.auth_time > resource.data.revokeTime;
+		}
+    //metadata collection can only be accessed by the admin
+		match /metadata/{uid} {
+			//Users cannot read the metadata
+			allow read: if false;
+			//Users cannot write the metadata
+			allow write: if false;
+		}
+    //codes collection can only be accessed by the admin
+		match /codes/{email} {
+			//Users cannot read the codes
+			allow read: if false;
+			//Users cannot write the codes
+			allow write: if false;
+		}
+    //email collection can only be accessed by the admin
+		match /email_templates/{template} {
+			//Users cannot read the email_templates
+			allow read: if false;
+			//Users cannot write the email_templates
+			allow write: if false;
+		}
+    //emails collection can be accessed by the admin and the user
+		match /emails/{email} {
+			//Users cannot read the email_templates
+			allow read: if false;
+			//Users cannot write the email_templates
+			allow write: if false;
+		}
+    //users collection can be accessed by the admin and the user
+		match /users/{uid} {
+			//Users can read and update an existing document if authenticated and 
+			//the user is owner and the id token has not been revoked
+			allow read, update: if request.auth != null 
+			&& request.auth.uid == uid 
+			&& notRevoked();
+			//Users cannot create new documents
+			allow create: if false;
+		}
+  }
+}

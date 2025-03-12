@@ -138,10 +138,10 @@ void main() {
               robot.auth.locale.languageCode,
               VerificationType.login,
               //* Add a delay to allow time for the loading to work
-            )).thenAnswer((_) async => Future.delayed(
-              const Duration(milliseconds: 100),
-              () => Future.value(),
-            ));
+            )).thenAnswer((_) async {
+          await Future.delayed(const Duration(milliseconds: 100));
+          return Future.value();
+        });
         when(() => authService.authStateChange())
             .thenAnswer((_) => const Stream<AppUser>.empty());
         when(() => authService.currentUser).thenReturn(null);
@@ -151,6 +151,8 @@ void main() {
           page: const SignInPage(),
         );
         await robot.auth.expectSubmitEmailLoadingIndicator();
+        //* Explicitly wait for async work to complete
+        await Future.delayed(const Duration(milliseconds: 150));
       });
     });
     testWidgets('''WHEN submitting an email for login 
@@ -685,10 +687,10 @@ void main() {
               robot.auth.locale.languageCode,
               VerificationType.login,
               //* Add a delay to allow time for the loading to work
-            )).thenAnswer((_) async => Future.delayed(
-              const Duration(milliseconds: 100),
-              () => Future.value(),
-            ));
+            )).thenAnswer((_) async {
+          await Future.delayed(const Duration(milliseconds: 100));
+          return Future.value();
+        });
         when(() => authService.authStateChange())
             .thenAnswer((_) => const Stream<AppUser>.empty());
         when(() => authService.currentUser).thenReturn(null);
@@ -698,6 +700,8 @@ void main() {
           page: const SignInPage(),
         );
         await robot.auth.expectSubmitEmailLoadingIndicator();
+        //* Explicitly wait for async work to complete
+        await Future.delayed(const Duration(milliseconds: 150));
       });
     });
     testWidgets('''WHEN submitting an email for login

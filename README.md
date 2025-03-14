@@ -1,6 +1,11 @@
 # Fullstack App
 
-> A full demo of a **sign-in and sign-up process** integrating **Firebase Functions** and **Flutter**.
+> A full demo of a **custome verification code sign-in and sign-up process** integrating **Firebase** and **Flutter** incorporating sending an emails using Functions trigger extension and using Flutter localization (example .arb files are provided).
+
+## 🎥 Demo video
+
+1. [Watch email demo](https://drive.google.com/file/d/1pwQ9UXaI6a1hiecuw4O9LR2LAgy8sZvr/view?usp=drive_link)
+2. [Watch localizationd demo](https://drive.google.com/file/d/1pwQ9UXaI6a1hiecuw4O9LR2LAgy8sZvr/view?usp=drive_link)
 
 ## 📌 Tech Stack
 
@@ -98,6 +103,8 @@ Once your project is set up, **download the required Firebase configuration file
   > 🚀 **Tip:** If using multiple environments ios, also place `GoogleService-Info.plist` in `ios/config/stage/` and `ios/config/prod/`.
 
   > 🚀 **Tip:** If using multiple environments android, also place `google-services.json` in `android/app/src/stage/` and `android/app/src/prod/`.
+
+To learn more how to configure flavors in Flutter please read this amazing article written by `Animesh Jain` on [Medium](https://medium.com/@animeshjain/build-flavors-in-flutter-android-and-ios-with-different-firebase-projects-per-flavor-27c5c5dac10b)
 
 ---
 

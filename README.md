@@ -4,8 +4,8 @@
 
 ## 🎥 Demo video
 
-1. [Watch email demo](https://drive.google.com/file/d/1pwQ9UXaI6a1hiecuw4O9LR2LAgy8sZvr/view?usp=drive_link)
-2. [Watch localizationd demo](https://drive.google.com/file/d/1pwQ9UXaI6a1hiecuw4O9LR2LAgy8sZvr/view?usp=drive_link)
+1. [Watch email demo.](https://drive.google.com/file/d/1pwQ9UXaI6a1hiecuw4O9LR2LAgy8sZvr/view?usp=drive_link)
+2. [Watch localization demo.](https://drive.google.com/file/d/1S1dOq_MRZFmzZOQ7tuAXbpSmJtd8k72q/view?usp=sharing)
 
 ## 📌 Tech Stack
 
@@ -104,7 +104,7 @@ Once your project is set up, **download the required Firebase configuration file
 
   > 🚀 **Tip:** If using multiple environments android, also place `google-services.json` in `android/app/src/stage/` and `android/app/src/prod/`.
 
-To learn more how to configure flavors in Flutter please read this amazing article written by `Animesh Jain` on [Medium](https://medium.com/@animeshjain/build-flavors-in-flutter-android-and-ios-with-different-firebase-projects-per-flavor-27c5c5dac10b)
+> To learn more how to configure flavors in Flutter please read this amazing article written by *`Animesh Jain`* on [Medium.](https://medium.com/@animeshjain/build-flavors-in-flutter-android-and-ios-with-different-firebase-projects-per-flavor-27c5c5dac10b)
 
 ---
 

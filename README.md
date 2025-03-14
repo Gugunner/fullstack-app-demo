@@ -9,12 +9,14 @@
 
 ## 📌 Tech Stack
 
-- **Flutter**: 3.19.2
+- **Flutter**: 3.29.1
 - **Dart**: 3.7.0
-- **Node.js**: 21.6.2
-- **Npm**: 10.4.0
-- **Typescript**: 4.9.5
-- **Firebase**: 13.5.1
+- **Node.js**: 23.7.0
+- **Npm**: 11.1.0
+- **Typescript**: 5.8.2
+- **Firebase**: 13.34.0
+- **Android min sdk** 23
+- **iOS delivery target** 13
 
 ---
 

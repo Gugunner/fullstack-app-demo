@@ -39,3 +39,8 @@ firebase_app_*.json
 
 #build
 build/
+
+# Ignore Xcode workspace and project settings
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/
+ios/Runner.xcodeproj/project.pbxproj

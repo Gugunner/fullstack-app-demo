@@ -23,9 +23,9 @@
 ## 📚 Table of Contents
 
 - [Install Dependencies](#install-dependencies)
-- [Setup Firebase Cli](#setup-firebase-cli)
+- [Set Up Firebase CLI](#set-up-firebase-cli)
 - [Configure Firebase and Download Required Files](#configure-firebase-and-download-required-files)
-- [Set Up Firebase Local Emulator](#setup-firebase-local-emulator)
+- [Set Up Firebase Local Emulator](#set-up-firebase-local-emulator)
 - [Configure Environment Variables](#configure-environment-variables)
 - [Generate Firebase Configuration Files](#generate-firebase-configuration-files)
 - [Final Check](#final-check)
@@ -175,7 +175,7 @@ This will create the necessary **Firebase options** files for your Flutter proje
 
 ---
 
-### ✅ Final Check
+### Final Check
 
 Before proceeding, ensure you have:
 

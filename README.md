@@ -22,7 +22,7 @@
 
 ## 📚 Table of Contents
 
-- [Install Dependencies](#install dependencies)
+- [Install Dependencies](#install-dependencies)
 - [Setup Firebase Cli](#setup-firebase-cli)
 - [Configure Firebase and Download Required Files](#configure-firebase-and-download-required-files)
 - [Set Up Firebase Local Emulator](#setup-firebase-local-emulator)
@@ -32,7 +32,7 @@
 
 ---
 
-### 1️⃣ Install Dependencies
+### Install Dependencies
 This project runs on **OSX, Linux, and Windows**.
 
 1. **Clone the repository:**
@@ -57,7 +57,7 @@ This project runs on **OSX, Linux, and Windows**.
 
 ---
 
-### 2️⃣ Set Up Firebase CLI
+### Set Up Firebase CLI
 
 To manage Firebase services, you must install and configure the **Firebase CLI**.
 
@@ -72,7 +72,7 @@ firebase login
 
 ---
 
-### 3️⃣ Configure Firebase and Download Required Files
+### Configure Firebase and Download Required Files
 
 #### 🔹 **Select Your Firebase Project**
 
@@ -103,7 +103,7 @@ Once your project is set up, **download the required Firebase configuration file
 
 ---
 
-### 4️⃣ Set Up Firebase Local Emulator
+### Set Up Firebase Local Emulator
 
 To run Firebase services locally (Firestore, Authentication, Functions), set up the **Firebase Emulator Suite**.
 
@@ -137,7 +137,7 @@ You must enable Firestore and Authentication emulation in your local environment
 
 ---
 
-### 5️⃣ Configure Environment Variables
+### Configure Environment Variables
 
 This project requires environment variables to be set up before running.
 
@@ -163,7 +163,7 @@ Then, edit the file and fill in the required values.
 
 ---
 
-### 6️⃣ Generate Firebase Configuration Files
+### Generate Firebase Configuration Files
 
 Once the required files are in place, run:
 

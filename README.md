@@ -22,25 +22,18 @@
 
 ## 📚 Table of Contents
 
-- [Installation](#installation)
-- [Running the Demo](#how-to-run-demo)
-- [Generating Localization Files](#generate-intl-files)
-- [Running Firebase Functions](#run-firebase-functions-local-api-calls)
-- [Running Firebase Emulator](#run-firebase-emulator)
-- [Email Automation Setup](#-email-automation-setup-firebase-trigger-email--sendgrid)
-- [Release History](#release-history)
-- [Troubleshooting](#troubleshooting)
-- [Firebase Configuration for iOS](#-firebase-configuration-for-ios)
-- [Meta](#meta)
-- [License](#copyrights)
+- [Install Dependencies](#install dependencies)
+- [Setup Firebase Cli](#setup-firebase-cli)
+- [Configure Firebase and Download Required Files](#configure-firebase-and-download-required-files)
+- [Set Up Firebase Local Emulator](#setup-firebase-local-emulator)
+- [Configure Environment Variables](#configure-environment-variables)
+- [Generate Firebase Configuration Files](#generate-firebase-configuration-files)
+- [Final Check](#final-check)
 
 ---
 
-## 🚀 Installation
-
-This project runs on **OSX, Linux, and Windows**.
-
 ### 1️⃣ Install Dependencies
+This project runs on **OSX, Linux, and Windows**.
 
 1. **Clone the repository:**
 
@@ -64,7 +57,7 @@ This project runs on **OSX, Linux, and Windows**.
 
 ---
 
-### 2️⃣ Set Up Firebase CLI (Required)
+### 2️⃣ Set Up Firebase CLI
 
 To manage Firebase services, you must install and configure the **Firebase CLI**.
 
@@ -110,7 +103,7 @@ Once your project is set up, **download the required Firebase configuration file
 
 ---
 
-### 4️⃣ Set Up Firebase Local Emulator (Recommended for Local Testing)
+### 4️⃣ Set Up Firebase Local Emulator
 
 To run Firebase services locally (Firestore, Authentication, Functions), set up the **Firebase Emulator Suite**.
 
@@ -185,12 +178,19 @@ This will create the necessary **Firebase options** files for your Flutter proje
 ### ✅ Final Check
 
 Before proceeding, ensure you have:
+
 ✔️ Installed **Firebase CLI** ([Setup Guide](https://firebase.google.com/docs/cli#setup))
+
 ✔️ Logged into **Firebase**
+
 ✔️ Selected your **Firebase Project**
+
 ✔️ Downloaded **`google-services.json` & `GoogleService-Info.plist`**
+
 ✔️ Installed **Firebase Emulator** (if running locally)
+
 ✔️ Created **`.env.local` or `.env.dev`**
+
 ✔️ Ran `flutterfire configure`
 
 Now you’re ready to run the project! 🚀
@@ -200,14 +200,6 @@ Now you’re ready to run the project! 🚀
 ## ❗ Important: Scope of This README
 
 This README covers **only running the app in local emulator mode**.
-If you want to use a **Firebase Cloud project**, you must:
-
-1. **Correctly configure Firebase** for cloud deployment.
-2. **Upload Firebase Functions** using:
-   ```sh
-   firebase deploy --only functions
-   ```
-3. **Ensure Firestore and Authentication rules are configured**.
 
 📌 **Refer to Firebase official documentation** for production deployment instructions:
 ➡️ [Firebase Setup Guide](https://firebase.google.com/docs)
